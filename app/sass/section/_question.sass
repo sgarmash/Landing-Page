@@ -1,0 +1,56 @@
+.section__question 
+	background: $questionBackground
+	padding: 100px 0
+.description__question 
+	h2 
+		margin: 0
+		margin-bottom: 32px
+		padding: 0
+		text-align: center
+		font-family: $fontsFamilyLight
+		font-size: $titleFontsSize
+	p 
+		margin: 0
+		padding: 0
+		text-align: center
+		font-size: 12px
+		font-family: $fontsFamilyRegular
+		&:last-child
+			margin-bottom: 32px
+		span
+			font-family: $fontsFamilyBold
+.block__question_button
+	display: flex
+	justify-content: center
+	align-items: center
+.btn__question
+	width: 100%
+	height: 45px
+	background: transparent
+	border: 2px solid $primaryBackground
+	border-radius: 10px
+	font-family: $fontsFamilyBold
+	font-size: $menuFontSize
+	line-height: 45px
+	text-transform: uppercase
+	cursor: pointer
+	&:focus
+		outline: none
+@include ipad-land
+	.btn__question
+		width: 200px
+	.description__question
+		h2 
+		 	font-size: 34px
+		p 
+			&:last-child
+				margin-bottom: 0
+				text-align: right
+				padding-right: 26px	
+@include pc-small
+	.description__question 
+		h2 
+			font-size: $titleFontsSize
+		p 
+			font-size:  $blockFontsSize
+

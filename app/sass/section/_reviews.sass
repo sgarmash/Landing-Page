@@ -1,0 +1,70 @@
+/*____________________________________________ start reviews _____________________________________________*/
+
+.reviews__section
+	background: $reviewsBackground
+	padding: 100px 0
+.reviews__block
+	background: $secondaryBackground
+	padding: 19px 19px 28px 19px
+	margin-bottom: 30px
+.reviews__content_block 
+	background: $secondaryBackground 
+	border: 1px solid $reviewsBlockBorder
+	padding: 20px 20px 0 20px
+.slick-track 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.slick-initialized 
+	.slick-slide 
+		outline-style: none
+.slick-prev
+	right: 50px !important
+	z-index: 100
+	&:before
+		content: ""
+		display: block
+		width: 32px
+		height: 32px
+		background: url('../images/slickPrev.png')
+	@include mob-small
+		top: -40px
+	@include ipad-port
+		top: -85px
+.slick-next
+	right: 14px
+	&:before 
+		content: ""
+		display: block
+		width: 32px
+		height: 32px
+		background: url('../images/slickNext.png')
+	@include mob-small
+		top: -40px
+	@include ipad-port
+		top: -85px
+.slick-slider 
+	.reviews__name
+		margin: 0
+		padding: 0
+		font-family: $fontsFamilyBold
+		font-size: $blockFontsSize
+		color: $titleColor
+	.reviews__date
+		margin: 0
+		padding: 0
+		font-family: $fontsFamilyLight
+		font-size: $menuFontSize
+		color: $titleColor
+	img
+		display: inline-block
+		float: left
+		margin: 0 20px 20px 0
+		
+	@include ipad-port
+		.margin__content
+			margin-right: 20px
+			margin-left: 20px
+ 

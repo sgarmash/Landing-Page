@@ -1,0 +1,38 @@
+.footer
+	width: 100%
+	height: 100%
+	background: url('../images/footerBg.jpg') no-repeat center center / cover
+	padding: 100px 0
+.description__footer_text
+	margin-bottom: 40px
+	font-family: $fontsFamilyRegular
+	font-size: $blockFontsSize
+	color: $colorFonts
+.more__button
+	height: 45px
+	width: 100%
+	margin-bottom: 40px
+	text-align: center
+	border: 2px solid $hoverFonts
+	border-radius: 10px
+	background-color: transparent
+	color: $colorFonts
+	text-transform: uppercase
+	cursor: pointer
+	&:focus
+		outline: none
+.evaluation__footer
+	display: flex
+	justify-content: center
+	align-items: center
+	img 
+		margin-right: 20px
+.evaluation__text
+	margin: 0
+	padding: 0
+	align-items: flex-end
+	color: $colorFonts
+
+@include ipad-land 
+	.more__button
+		width: 140px

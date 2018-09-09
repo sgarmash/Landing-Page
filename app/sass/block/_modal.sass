@@ -1,0 +1,118 @@
+/*____________________________________________ start modal _____________________________________________*/
+.modal
+	position: fixed
+	display: none
+	z-index: 10 !important
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		right: 0
+		background: $modalSecondaryBackgroundButton
+		opacity: .6
+	&::after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		right: 0
+		background: $modalSecondaryBackgroundButton
+		opacity: .6
+.title__form 
+	display: block
+	margin-bottom: 30px
+	font-size: 18px
+	@include ipad-port
+		font-size: 36px
+		&::before
+			height: 36px !important
+	&::before
+		height: 26px
+		margin-right: 12px
+		top: 1px
+.modal__content 
+	position: relative
+	display: block
+	z-index: 100
+.form__body
+	display: flex
+	flex-direction: column
+	width: 100% 
+	input[type='text']
+		width: 100%
+		height: 46px
+		padding-left: 30px
+		font-family: $fontsFamilyRegular
+		font-size: $blockFontsSize
+		border: 1px solid $modalInputBorder
+		border-radius: 10px
+		&:focus
+			outline: none !important
+			box-shadow: none !important
+.modal__form
+	max-width: 660px
+	margin: 15% auto
+	padding: 20px 50px 
+	background: $secondaryBackground
+	border-radius: 10px
+.form__input 
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	label
+		width: 100%
+		@include ipad-port
+			&:nth-of-type(even)
+				margin-left: 20px
+	@include ipad-port
+		flex-direction: row
+.close__modal 
+	display: block
+	text-align: right
+.dBlock
+	display: block
+.modal__text_label 
+	display: block
+.modal__mesege 
+	display: block
+	margin-bottom: 30px
+	padding: 20px 0 0 30px
+	width: 100%
+	min-height: 110px
+	color: $titleColor
+	font-family: $fontsFamilyRegular
+	font-size: $blockFontsSize
+	border: 1px solid $modalInputBorder
+	border-radius: 10px
+	resize: none
+	&:-webkit-input-placeholder 
+		color: $titleColor
+	&:focus
+		outline: none !important
+		box-shadow: none !important
+.botton__block_form 
+	text-align: center
+.button__form_send 
+	padding: 20px 30px 
+	background: $primaryBackgroundButton
+	color: $titleColor
+	font-family: $fontsFamilyBold
+	font-size: 10px
+	text-transform: uppercase
+	border: none
+	border-radius: 6px
+	cursor: pointer
+	@include ipad-port 
+		font-size: $menuFontSize
+.form__error 
+	.modal__input_text
+		border: 1px solid $modalInputError !important
+	.modal__input 
+		border: 1px solid $modalInputError !important
+	.error 
+		color: $modalInputError

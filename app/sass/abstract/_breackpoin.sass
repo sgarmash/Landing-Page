@@ -1,0 +1,56 @@
+$pcBig: 1438px !default
+$pcSmall: 1280px !default
+$ipadLand: 1023px !default
+$ipadPort: 767px !default
+$mobBig: 568px !default
+$mobSmall: 319px !default
+
+$screenMedium: 1000px
+
+@mixin pc-big() 
+	@media screen and (min-width: $pcBig) 
+		@content
+	
+
+
+@mixin pc-small() 
+	@media screen and (min-width: $pcSmall) 
+		@content
+	
+
+
+@mixin ipad-land() 
+	@media screen and (min-width: $ipadLand) 
+		@content
+	
+
+
+@mixin ipad-port() 
+	@media screen and (min-width: $ipadPort) 
+		@content
+	
+
+
+@mixin mob-big() 
+	@media screen and (min-width: $mobBig) 
+		@content
+	
+
+
+@mixin mob-small() 
+	@media screen and (min-width: $mobSmall) 
+		@content
+	
+
+
+@mixin scr-medium() 
+	@media screen and (min-width: $screenMedium) 
+		@content
+	
+
+
+@mixin scr-short() 
+	@media screen and (min-width: $screenShort) 
+		@content
+	
+
