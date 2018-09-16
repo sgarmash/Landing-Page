@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	    });
 
 	 	// open modal
-	    openModal = $('.block__timetable a#open__modal').on('click', function (e) {
+	    openModal = $('.block__entry a').on('click', function (e) {
 		 	$('.modal').toggleClass('dBlock');
 		 	$(this).css({
 		 		background: '#f3f3f3',
