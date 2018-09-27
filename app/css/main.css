@@ -7455,7 +7455,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .header__button_entry:hover {
     background: transparent;
     outline-style: none;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
+  .header__button_reviews:focus,
+  .header__button_entry:focus {
+    outline-style: none;
+    text-decoration: none; }
 
 .header__button_reviews {
   margin-bottom: 20px; }
@@ -7649,7 +7654,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .slick-prev {
   right: 50px !important;
-  z-index: 100; }
+  z-index: 50; }
   .slick-prev:before {
     content: "";
     display: block;
@@ -7960,10 +7965,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding: 100px 0; }
 
 .description__footer_text {
+  height: 65px;
   margin-bottom: 40px;
   font-family: "GothamProRegular";
   font-size: 15px;
-  color: #fff; }
+  color: #fff;
+  overflow: hidden; }
 
 .more__button {
   height: 45px;
@@ -8003,6 +8010,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       -ms-flex-align: end;
           align-items: flex-end;
   color: #fff; }
+
+.active__text_descrition {
+  height: 150px; }
 
 @media screen and (min-width: 1023px) {
   .more__button {
@@ -8079,7 +8089,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .modal__form {
   max-width: 660px;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px 50px;
   background: #fff;
   border-radius: 10px; }

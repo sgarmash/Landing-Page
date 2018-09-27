@@ -1,21 +1,23 @@
 $( document ).ready(function() {
 
 	// variable
-	var openMenu, openModal, closeModal, carousel, openModalQuestion; 
+	var openMenu, openModal, closeModal, carousel, openModalQuestion, descriptionBlockHeader, moreTextDescription; 
 
     $(function(){
     	// open menu
-		openMenu = $(".toggle__nav");
+		openMenu = $('.toggle__nav');
 	 	openMenu.on('click' , function (e) {
-	        $(".active").slideToggle("slow");
+	        $(".active").slideToggle('slow');
 	    });
 
 	 	// open modal
-	    openModal = $('.block__entry a').on('click', function (e) {
+	 	openModal = $('.block__entry a');
+	    openModal.on('click', function (e) {
 		 	$('.modal').toggleClass('dBlock');
 		 	$(this).css({
 		 		background: '#f3f3f3',
-		 		color: '#999999'
+		 		color: '#999999',
+		 		cursor: 'default'
 		 	});
 		});
 
@@ -25,12 +27,24 @@ $( document ).ready(function() {
 		 	$('.modal').removeClass('dBlock');
 		});
 
+		descriptionBlockHeader = $('.block__description');
+		descriptionBlockHeader.on('click','a', function (e) {
+	        event.preventDefault();
+	        var id  = $(this).attr('href'),
+	            top = $(id).offset().top;
+	        $('body,html').animate({scrollTop: top}, 1000);
+	    });
+
 		// open modal
 		openModalQuestion = $('.btn__question');
 	 	openModalQuestion.on('click', function (e) {
 		 	$('.modal').toggleClass('dBlock');
 		});
 
+		moreTextDescription = $('.more__button');
+		moreTextDescription.on('click', function(e) {
+			$('.description__footer_text').toggleClass('active__text_descrition');
+		});
 	 	// slick slide
 		carousel = $('.reviews__carousel');
 		carousel.slick({

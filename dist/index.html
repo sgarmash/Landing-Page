@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head lang="en"></head>
-  <mata charset="UTF-8"></mata>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
-  <title>Квест-комнаты Харькова</title>
+  <title>Kvest room Kharkov</title>
   <body>
     <!-- start header block-->
     <header class="header">
@@ -25,16 +25,14 @@
       <div class="container">
         <!-- start header__content-->
         <div class="header__content">
-          <h1 class="header__title">Квест-комнаты в Харькове</h1><img src="images/title__images.png" alt="icon__logo" class="images">
+          <h1 class="header__title">Квест-комнаты Харькова</h1><img src="images/title__images.png" alt="icon__logo" class="images">
           <!-- start row-->
           <div class="row">
             <!-- start column bootstrap-->
             <div class="col-xs-12 col-md-8 col-lg-8">
               <div class="container__description">
                 <div class="block__description">
-                  <p class="header__paragraph">Жителей нашего города преследует один и тот же кошмар: во снах за ними крадется жуткий, обезображенный убийца — Фредди Крюгер. Они могут защитить друг друга наяву, во сне же — остаются один на один с ожившим кошмаром, и шансы спастись стремительно приближаются к нулю…  Единственный способ защититьщититься - побороть его во сне и проснуться за 60 минут... </p>
-                  <button class="header__button_reviews">отзывы о комнате</button>
-                  <button class="header__button_entry">записатся на игру</button>
+                  <p class="header__paragraph">Жителей нашего города преследует один и тот же кошмар:  во снах за ними крадется жуткий, обезображенный убийца — Фредди Крюгер. Они могут защитить друг друга наяву, во сне же — остаются один на один с ожившим кошмаром, и шансы спастись стремительно приближаются к нулю… ведь, все убитые во сне, умирают и наяву… Единственный способ защититься — побороть его во сне и проснуться за 60 минут…</p><a href="#reviews" class="header__button_reviews">отзывы о комнате</a><a href="#entry" class="header__button_entry">записатся на игру</a>
                 </div>
               </div>
             </div>
@@ -74,7 +72,7 @@
       </section>
       <!-- end section photo-->
       <!-- start section reviews-->
-      <section class="reviews__section">
+      <section id="reviews" class="reviews__section">
         <!-- start container-->
         <div class="container">
           <h1 class="title title__entry">Что о нас говорят</h1>
@@ -126,7 +124,7 @@
         <div class="container">
           <h1 class="title">Записаться на игру</h1>
           <!-- start block__entry-->
-          <div class="block__entry">
+          <div id="entry" class="block__entry">
             <!-- start block__timetable-->
             <div class="block__timetable">
               <p class="date__timetable">Пн, 1 июля</p><a href="#null" class="day__timetable">10:00 - 11:00</a><a href="#null" class="day__timetable">11:15 - 12:15</a><a href="#null" class="day__timetable">12:30 - 13:30</a><a href="#null" class="day__timetable">13:45 - 14:45</a><a href="#null" class="day__timetable">15:00 - 16:00</a><a href="#null" class="day__timetable">16:15 - 17:15</a><a href="#null" class="eventide__timetable">17:30 - 18:30</a><a href="#null" class="eventide__timetable">18:45 - 19:45</a><a href="#null" class="eventide__timetable">20:00 - 21:00</a><a href="#null" class="nigth__timetable">21:15 - 22:15</a><a href="#null" class="nigth__timetable">22:30 - 23:30</a>
@@ -205,10 +203,12 @@
         <!-- start container-->
         <div class="row">
           <!-- start row-->
-          <div class="col-xs-12 col-md-12 col-lg-6">
-            <!-- start --><img src="images/title__images.png" alt="icon__logo" class="images">
-            <p class="description__footer_text">Очнулись с друзьями в помещении... Заперто! Огляделись вокруг - интструменты, халаты, хирургические инструмиенты. Что же это? Операционная, логово маньяка или подпольная больница? Таймер начал отсчёт, и лучше бы успеть...</p>
-            <button class="more__button">подробнее</button>
+          <div class="col-xs-12 col-md-12 col-lg-6 footer__block_content">
+            <!-- start -->
+            <div class="footer__description_kvest"><img src="images/title__images.png" alt="icon__logo" class="images">
+              <p class="description__footer_text">Жителей нашего города преследует один и тот же кошмар:  во снах за ними крадется жуткий, обезображенный убийца — Фредди Крюгер. Они могут защитить друг друга наяву, во сне же — остаются один на один с ожившим кошмаром, и шансы спастись стремительно приближаются к нулю… ведь, все убитые во сне, умирают и наяву… Единственный способ защититься — побороть его во сне и проснуться за 60 минут…</p>
+              <button class="more__button"></button>
+            </div>
             <!-- end-->
           </div>
           <div class="col-xs-12 col-md-12 col-lg-6 evaluation__footer">

@@ -4,30 +4,30 @@ section(class="section__entry")
 	//start container
 
 	div(class="container")
-		h1(class="title") Записаться на игру
+		h1(class="title") #{titleEntrySection}
 
 		// start block__entry
 
-		div(class="block__entry")
+		div(class="block__entry" id="entry")
 
 			// start block__timetable
 			div(class="block__timetable")
-				p(class="date__timetable") Пн, 1 июля
-				a(class="day__timetable", href="#null") 10:00 - 11:00
-				a(class="day__timetable", href="#null") 11:15 - 12:15
-				a(class="day__timetable" href="#null") 12:30 - 13:30
-				a(class="day__timetable" href="#null") 13:45 - 14:45
-				a(class="day__timetable", href="#null") 15:00 - 16:00
-				a(class="day__timetable", href="#null") 16:15 - 17:15
-				a(class="eventide__timetable", href="#null") 17:30 - 18:30
-				a(class="eventide__timetable", href="#null") 18:45 - 19:45
-				a(class="eventide__timetable", href="#null") 20:00 - 21:00
-				a(class="nigth__timetable", href="#null") 21:15 - 22:15
-				a(class="nigth__timetable", href="#null") 22:30 - 23:30
+				p(class="date__timetable") #{dateEntrySectionMonday}
+				a(class="day__timetable", href="#null") #{morningEntrySection1}
+				a(class="day__timetable", href="#null") #{morningEntrySection2}
+				a(class="day__timetable" href="#null") #{afternoonEntrySection1}
+				a(class="day__timetable" href="#null") #{afternoonEntrySection2}
+				a(class="day__timetable", href="#null") #{afternoonEntrySection3}
+				a(class="day__timetable", href="#null") #{afternoonEntrySection4}
+				a(class="eventide__timetable", href="#null") #{eveningEntrySection1}
+				a(class="eventide__timetable", href="#null") #{eveningEntrySection2}
+				a(class="eventide__timetable", href="#null") #{eveningEntrySection3}
+				a(class="nigth__timetable", href="#null") #{nightEntrySection1}
+				a(class="nigth__timetable", href="#null") #{nightEntrySection2}
 			// end block__timetable
 			
 			div(class="block__timetable")
-				p(class="date__timetable") Вт, 2 июля
+				p(class="date__timetable") #{dateEntrySectionTuesday}
 				a(class="day__timetable",  href="#null") 10:00 - 11:00
 				a(class="day__timetable",  href="#null") 11:15 - 12:15
 				a(class="day__timetable",  href="#null") 12:30 - 13:30
@@ -43,7 +43,7 @@ section(class="section__entry")
 			// end block__timetable
 
 			div(class="block__timetable")
-				p(class="date__timetable") Ср, 3 июля
+				p(class="date__timetable") #{dateEntrySectionWednesday}
 				a(class="day__timetable",  href="#null") 10:00 - 11:00
 				a(class="day__timetable",  href="#null") 11:15 - 12:15
 				a(class="day__timetable",  href="#null") 12:30 - 13:30
@@ -59,7 +59,7 @@ section(class="section__entry")
 			// end block__timetable
 
 			div(class="block__timetable")
-				p(class="date__timetable") Чт, 4 июля
+				p(class="date__timetable") #{dateEntrySectionThursday}
 				a(class="day__timetable",  href="#null") 10:00 - 11:00
 				a(class="day__timetable",  href="#null") 11:15 - 12:15
 				a(class="day__timetable",  href="#null") 12:30 - 13:30
@@ -75,7 +75,7 @@ section(class="section__entry")
 			// end block__timetable
 
 			div(class="block__timetable")
-				p(class="date__timetable") Пт, 4 июля
+				p(class="date__timetable") #{dateEntrySectionFriday}
 				a(class="day__timetable",  href="#null") 10:00 - 11:00
 				a(class="day__timetable",  href="#null") 11:15 - 12:15
 				a(class="day__timetable",  href="#null") 12:30 - 13:30
@@ -91,7 +91,7 @@ section(class="section__entry")
 			// end block__timetable
 
 			div(class="block__timetable")
-				p(class="date__timetable") Сб, 5 июля
+				p(class="date__timetable") #{dateEntrySectionSaturday}
 				a(class="day__timetable",  href="#null") 10:00 - 11:00
 				a(class="day__timetable",  href="#null") 11:15 - 12:15
 				a(class="day__timetable",  href="#null") 12:30 - 13:30
