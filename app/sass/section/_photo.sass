@@ -4,21 +4,25 @@
 	padding-top: 90px
 	padding-bottom: 90px
 .title
-	display: inline-block
+	display: block
 	margin-bottom: 60px
 	color: $titleColor
 	font-size: 27px
 	font-family: $fontsFamilyLight
-	&::before
-		content: ""
-		position: relative
+	text-align: center
+	@include ipad-port
 		display: block
-		float: left
-		width: 4px
-		height: 34px
-		top: 0px
-		margin-right: 32px
-		background: $borderButtons
+		text-align: left
+		&::before
+			content: ""
+			position: relative
+			display: block
+			float: left
+			width: 4px
+			height: 34px
+			top: 0px
+			margin-right: 32px
+			background: $borderButtons
 .container__phto
 	display: flex
 	flex-direction: column

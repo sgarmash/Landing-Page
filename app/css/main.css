@@ -7568,21 +7568,26 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding-bottom: 90px; }
 
 .title {
-  display: inline-block;
+  display: block;
   margin-bottom: 60px;
   color: #333333;
   font-size: 27px;
-  font-family: "GothamProLight"; }
-  .title::before {
-    content: "";
-    position: relative;
-    display: block;
-    float: left;
-    width: 4px;
-    height: 34px;
-    top: 0px;
-    margin-right: 32px;
-    background: #ebc339; }
+  font-family: "GothamProLight";
+  text-align: center; }
+  @media screen and (min-width: 767px) {
+    .title {
+      display: block;
+      text-align: left; }
+      .title::before {
+        content: "";
+        position: relative;
+        display: block;
+        float: left;
+        width: 4px;
+        height: 34px;
+        top: 0px;
+        margin-right: 32px;
+        background: #ebc339; } }
 
 .container__phto {
   display: -webkit-box;
@@ -7959,10 +7964,21 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     font-size: 15px; } }
 
 .footer {
+  position: relative;
   width: 100%;
-  height: 100%;
-  background: url("../images/footerBg.jpg") no-repeat center center/cover;
-  padding: 100px 0; }
+  height: 530px;
+  background: url("../images/footerBg.jpg") no-repeat center center/cover; }
+
+.footer__content {
+  position: absolute;
+  width: 100%;
+  margin-top: 17%; }
+  @media screen and (min-width: 767px) {
+    .footer__content {
+      margin-top: 8%; } }
+  @media screen and (min-width: 1000px) {
+    .footer__content {
+      margin-top: 10%; } }
 
 .description__footer_text {
   height: 65px;
@@ -7972,10 +7988,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   color: #fff;
   overflow: hidden; }
 
+.footer__description_kvest {
+  margin-bottom: 40px; }
+
 .more__button {
   height: 45px;
   width: 100%;
-  margin-bottom: 40px;
   text-align: center;
   border: 2px solid #ebc339;
   border-radius: 10px;
@@ -8022,7 +8040,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .modal {
   position: fixed;
   display: none;
-  z-index: 10 !important; }
+  z-index: 100 !important; }
   .modal::before {
     content: '';
     position: absolute;
@@ -8060,7 +8078,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .modal__content {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 100; }
 
 .form__body {
@@ -8074,7 +8104,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%; }
-  .form__body input[type='text'] {
+  .form__body input[type='text'],
+  .form__body input[type='email'],
+  .form__body input[type='tel'] {
     width: 100%;
     height: 46px;
     padding-left: 30px;
@@ -8082,17 +8114,21 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     font-size: 15px;
     border: 1px solid #d9d9d9;
     border-radius: 10px; }
-    .form__body input[type='text']:focus {
+    .form__body input[type='text']:focus,
+    .form__body input[type='email']:focus,
+    .form__body input[type='tel']:focus {
       outline: none !important;
       -webkit-box-shadow: none !important;
               box-shadow: none !important; }
 
 .modal__form {
-  max-width: 660px;
-  margin: 10% auto;
-  padding: 20px 50px;
+  max-width: 550px;
+  padding: 20px 20px;
   background: #fff;
   border-radius: 10px; }
+  @media screen and (min-width: 767px) {
+    .modal__form {
+      padding: 20px 50px; } }
 
 .form__input {
   display: -webkit-box;
@@ -8110,16 +8146,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
           justify-content: flex-start; }
   .form__input label {
     width: 100%; }
-    @media screen and (min-width: 767px) {
-      .form__input label:nth-of-type(even) {
-        margin-left: 20px; } }
-  @media screen and (min-width: 767px) {
-    .form__input {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
 
 .close__modal {
   display: block;
@@ -8166,6 +8192,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   @media screen and (min-width: 767px) {
     .button__form_send {
       font-size: 13px; } }
+
+.modal__form_text {
+  text-align: center; }
 
 .form__error .modal__input_text {
   border: 1px solid #c74040 !important; }

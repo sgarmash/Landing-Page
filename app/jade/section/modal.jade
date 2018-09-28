@@ -10,9 +10,11 @@ div(class="modal")
 					label(for="#" class="label__name") 
 						input(type="text" class="modal__input_text" name="name" placeholder="Ваше имя")
 					label(for="#" class="label__email") 
-						input(type="text" class="modal__input" name="email" placeholder="Ваше e-mail")
+						input(type="email" class="modal__input_email" name="email" placeholder="Ваше e-mail")
+					label(for="#" class="label__tel") 
+						input(type="tel" class="modal__input_tel" name="tel" placeholder="Ваше номер телефона")
 				textarea(class="modal__mesege" name="textarea" placeholder="Что вы хотите написать?") 
 			div(class="botton__block_form")
 				button(class="button__form_send") забронировать комнату		
 			div
-				p Введенные данные строго конфиденциальны.
+				p(class="modal__form_text") Введенные данные строго конфиденциальны.
