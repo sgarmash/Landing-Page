@@ -37,7 +37,8 @@ gulp.task('scripts:libs', function() {
   return gulp.src([
   	'app/vendor/jquery/dist/jquery.min.js',
     'app/vendor/slick-carousel/slick/slick.min.js',
-    'app/vendor/jquery-validation/dist/jquery.validate.min.js'
+    'app/vendor/jquery-validation/dist/jquery.validate.min.js',
+    'app/vendor/magnific-popup/dist/jquery.magnific-popup.min.js'
    ])
     .pipe(concat('libs.min.js'))
     .pipe(gulp.dest('dist/js/'));
@@ -53,7 +54,8 @@ gulp.task('scripts:main', function() {
 
 gulp.task('css', function () {
     return gulp.src([
-    	'app/css/main.css'
+    	'app/css/main.css',
+    	'app/css/magnific-popup.css'
     	])
         .pipe(csso({
             restructure: false,

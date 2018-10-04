@@ -44,6 +44,7 @@ $( document ).ready(function() {
 	moreTextDescription.on('click', function(e) {
 		$('.description__footer_text').toggleClass('active__text_descrition');
 	});
+
  	// slick slide
 	carousel = $('.reviews__carousel');
 	carousel.slick({
@@ -64,17 +65,26 @@ $( document ).ready(function() {
 	$('.modal__form').validate({
 		rules: {
 			name: {
-				required : true,
-				minlength: 3
+				required : true
 			},
 			email: {
-				required : true,
-				minlength: 5
+				required : true
 			},
 			tel: {
 				required : true
 			}
 		},
+		messages: {
+            name: {
+                required: "Это поле обязательно для заполнения"               
+            },
+            email: {
+                required: "Это поле обязательно для заполнения"               
+            },
+            tel: {
+                required: "Это поле обязательно для заполнения"               
+            }
+        },
 		highlight: function(element, errorClass, validClass) {
 	  		$(element).parents("div.form__input").addClass('form__error').removeClass('form__success');
 	  		$(element).parents("div.form__input").addClass('form__error').removeClass('form__success');
@@ -84,7 +94,7 @@ $( document ).ready(function() {
       		$(element).parents("label.form__input").removeClass('form__error').addClass('form__success');
       		$(element).parents("label.form__input").removeClass('form__error').addClass('form__success');
 	    }
-	})
+	});
 
  	$('input[type=tel]').on('keyup keypress', function(e) {
        if (e.keyCode == 8 || e.keyCode == 46) {}
@@ -94,4 +104,21 @@ $( document ).ready(function() {
             return (letters.indexOf(String.fromCharCode(e.which))!=-1);
         }
     });
+
+ 	$('.imageModal').magnificPopup({
+ 		type:'image',
+
+ 		zoom: {
+		    enabled: true,
+
+		    duration: 300, 
+		    easing: 'ease-in-out', 
+
+		    
+		    opener: function(openerElement) {
+		      
+		      return openerElement.is('img') ? openerElement : openerElement.find('img');
+		    }
+	  	}
+ 	});
 });

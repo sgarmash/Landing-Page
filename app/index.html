@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en"></head>
+  <head lang="ru"></head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fonts.css">
-  <title>Kvest room Kharkov</title>
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <title>Квест комнаты Харькова </title>
   <body></body>
   <!-- start header block-->
   <header class="header">
@@ -61,10 +62,10 @@
         <h1 class="title">Фотографии</h1>
         <!-- start block photo-->
         <div class="container__phto">
-          <div class="photo__images"><img src="images/photo1.png" alt="photo room"></div>
-          <div class="photo__images"><img src="images/photo2.png" alt="photo room"></div>
-          <div class="photo__images"><img src="images/photo3.png" alt="photo room"></div>
-          <div class="photo__images"><img src="images/photo4.png" alt="photo room"></div>
+          <div class="photo__images"><a href="images/photo1.png" class="imageModal"><img src="images/photo1.png" alt="photo room"></a></div>
+          <div class="photo__images"><a href="images/photo2.png" class="imageModal"><img src="images/photo2.png" alt="photo room"></a></div>
+          <div class="photo__images"><a href="images/photo3.png" class="imageModal"><img src="images/photo3.png" alt="photo room"></a></div>
+          <div class="photo__images"><a href="images/photo4.png" class="imageModal"><img src="images/photo4.png" alt="photo room"></a></div>
         </div>
         <!-- end block photo-->
       </div>
@@ -221,7 +222,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <script src="vendor/slick-carousel/slick/slick.min.js"></script>
-    <script src="vendor/jquery-validation/dist/jquery.validate.min.js">
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/magnific-popup/dist/jquery.magnific-popup.min.js">
       <!-- end -->
     </script>
     <!-- end row// end container
@@ -236,14 +238,18 @@
         <h2 class="title title__form">Написать письмо</h2>
         <div class="form__body">
           <div class="form__input">
-            <label for="#" class="label__name"> 
-              <input type="text" name="name" placeholder="Ваше имя" class="modal__input_text">
+            <label for="#" class="label__name"> <span class="form__span_text">Введите ваше имя</span>
+              <input type="text" name="name" placeholder="Имя" class="modal__input_text">
             </label>
-            <label for="#" class="label__email"> 
-              <input type="email" name="email" placeholder="Ваше e-mail" class="modal__input_email">
+          </div>
+          <div class="form__input">
+            <label for="#" class="label__email"><span class="form__span_text">Введите ваш e-mail </span>
+              <input type="email" name="email" placeholder="e-mail" class="modal__input_email">
             </label>
-            <label for="#" class="label__tel"> 
-              <input type="tel" name="tel" placeholder="Ваше номер телефона" class="modal__input_tel">
+          </div>
+          <div class="form__input">
+            <label for="#" class="label__tel"><span class="form__span_text">Введите ваш номер телефона </span>
+              <input type="tel" name="tel" placeholder="0(00)000 00 00" class="modal__input_tel">
             </label>
           </div>
           <textarea name="textarea" placeholder="Что вы хотите написать?" class="modal__mesege"> </textarea>

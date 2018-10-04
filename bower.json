@@ -19,6 +19,8 @@
   "dependencies": {
     "popper.js": "^1.14.3",
     "slick-carousel": "^1.8.1",
-    "jquery-validation": "^1.17.0"
+    "jquery-validation": "^1.17.0",
+    "lightbox2": "lightbox#^2.10.0",
+    "magnific-popup": "^1.1.0"
   }
 }

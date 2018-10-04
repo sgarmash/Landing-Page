@@ -26,6 +26,7 @@
 .title__form 
 	display: block
 	margin-bottom: 30px
+	text-align: left
 	font-size: 18px
 	@include ipad-port
 		font-size: 36px
@@ -59,6 +60,9 @@
 		&:focus
 			outline: none !important
 			box-shadow: none !important
+.form__span_text 
+	display: inline-block
+	margin-bottom: 5px
 .modal__form
 	max-width: 550px
 	padding: 20px 20px 
@@ -113,9 +117,14 @@
 .modal__form_text 
 	text-align: center
 .form__error 
-	.modal__input_text
+	.label__name,
+	.label__email,
+	.label__tel
+		color: $modalInputError
+	.modal__input_text,
+	.modal__input_email,
+	.modal__input_tel
 		border: 1px solid $modalInputError !important
-	.modal__input 
-		border: 1px solid $modalInputError !important
+		color: $modalInputError !important
 	.error 
 		color: $modalInputError

@@ -7391,6 +7391,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   background: url("../images/headerBg.jpg") no-repeat center center/cover;
   padding-top: 30px;
   padding-bottom: 100px; }
+  @media screen and (min-width: 1023px) {
+    .header {
+      height: 100vh; } }
 
 .container__reulation {
   display: -webkit-box;
@@ -7610,6 +7613,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     height: 165px;
     -o-object-fit: cover;
        object-fit: cover; }
+
+@media screen and (min-width: 767px) {
+  img.mfp-img {
+    width: 500px !important; } }
 
 @media screen and (min-width: 767px) {
   .title {
@@ -8065,6 +8072,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .title__form {
   display: block;
   margin-bottom: 30px;
+  text-align: left;
   font-size: 18px; }
   @media screen and (min-width: 767px) {
     .title__form {
@@ -8120,6 +8128,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       outline: none !important;
       -webkit-box-shadow: none !important;
               box-shadow: none !important; }
+
+.form__span_text {
+  display: inline-block;
+  margin-bottom: 5px; }
 
 .modal__form {
   max-width: 550px;
@@ -8196,11 +8208,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .modal__form_text {
   text-align: center; }
 
-.form__error .modal__input_text {
-  border: 1px solid #c74040 !important; }
+.form__error .label__name,
+.form__error .label__email,
+.form__error .label__tel {
+  color: #c74040; }
 
-.form__error .modal__input {
-  border: 1px solid #c74040 !important; }
+.form__error .modal__input_text,
+.form__error .modal__input_email,
+.form__error .modal__input_tel {
+  border: 1px solid #c74040 !important;
+  color: #c74040 !important; }
 
 .form__error .error {
   color: #c74040; }
