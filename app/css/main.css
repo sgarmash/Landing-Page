@@ -7973,8 +7973,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .footer {
   position: relative;
   width: 100%;
-  height: 530px;
+  height: 435px;
   background: url("../images/footerBg.jpg") no-repeat center center/cover; }
+  @media screen and (min-width: 1023px) {
+    .footer {
+      height: 525px; } }
 
 .footer__content {
   position: absolute;
