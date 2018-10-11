@@ -8134,7 +8134,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .form__span_text {
   display: inline-block;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  color: #333333; }
 
 .modal__form {
   max-width: 550px;
